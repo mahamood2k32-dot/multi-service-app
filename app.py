@@ -13,7 +13,7 @@ def home():
         database='flaskdb'
     )
     cursor = conn.cursor()
-    cursor.execute("SELECT 'Hello from MySQL!'")
+    cursor.execute("SELECT 'Hello from MySQL! Made with Flask and Docker!'")
     result = cursor.fetchone()
     cursor.close()
     conn.close()
